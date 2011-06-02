@@ -1,0 +1,5 @@
+name = Basic
+description = Super basic module.
+package = Basic
+core = 7.x
+files[] = worker.test

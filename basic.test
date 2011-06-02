@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Provide basic test case.
+ *
+ * @author Jimmy Berry ("boombatower", http://drupal.org/user/214218)
+ */
+
+class BasicTest extends DrupalUnitTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'Basic test',
+      'description' => 'Super basic test.',
+      'group' => 'Basic',
+    );
+  }
+
+  protected function testBasic() {
+    $this->pass('This is a pass.');
+    $this->fail('This is a fail.');
+  }
+}
